@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhatsApp Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+  <div class="whatsapp-container">
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <h1>WhatsApp</h1>
+        <div class="header-icons">
+          <span class="material-icons">chat</span>
+          <span class="material-icons">more_vert</span>
+        </div>
+      </header>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar ou começar uma nova conversa" />
+      </div>
+      <nav class="chat-filters">
+        <button class="filter-btn active">Tudo</button>
+        <button class="filter-btn">Não lidas</button>
+        <button class="filter-btn">Favoritas</button>
+        <button class="filter-btn">Grupos</button>
+      </nav>
+      <div class="notification-banner">
+        <span class="material-icons">notifications_off</span>
+        <span>As notificações de mensagens estão desativadas. <a href="#">Ativar</a></span>
+        <button class="close-btn" title="Fechar">×</button>
+      </div>
+      <ul class="contact-list">
+        <li class="contact-item pinned">
+          <div class="contact-pic">A</div>
+          <div class="contact-info">
+            <h4>Anotações</h4>
+            <p><span class="material-icons" style="font-size:14px;vertical-align:middle;">done_all</span> Você: <span class="material-icons" style="font-size:14px;vertical-align:middle;">photo</span> Foto</p>
+          </div>
+          <div class="timestamp">19/09/2025</div>
+          <button class="pin-btn" title="Fixar conversa">📌</button>
+        </li>
+        <li class="contact-item unread">
+          <img class="contact-pic" src="https://randomuser.me/api/portraits/lego/3.jpg" alt="3`)❤️Mewtwo🐋" />
+          <div class="contact-info">
+            <h4>Alice</h4>
+            <p><span class="material-icons" style="font-size:14px;vertical-align:middle;">emoji_emotions</span> Figurinha</p>
+          </div>
+          <div class="timestamp" style="color:#25d366;">13:18</div>
+          <button class="pin-btn" title="Fixar conversa">📌</button>
+          <span class="unread-count">1</span>
+        </li>
+        <li class="contact-item muted">
+          <img class="contact-pic" src="https://randomuser.me/api/portraits/men/45.jpg" alt="KMC - PORTO ALEGRE" />
+          <div class="contact-info">
+            <h4>KMC - PORTO ALEGRE 💀🥊</h4>
+            <p><span class="material-icons" style="font-size:14px;vertical-align:middle;">person</span> Mestre Sérgio: <span class="material-icons" style="font-size:14px;vertical-align:middle;">photo</span> Foto</p>
+          </div>
+          <div class="timestamp">13:30</div>
+          <span class="material-icons muted-icon" title="Silenciado">notifications_off</span>
+        </li>
+        <li class="contact-item">
+          <img class="contact-pic" src="https://randomuser.me/api/portraits/men/65.jpg" alt="Pai" />
+          <div class="contact-info">
+            <h4>Pai</h4>
+            <p><span class="material-icons" style="font-size:14px;vertical-align:middle;">done_all</span> Você: Tô indo pro curso</p>
+          </div>
+          <div class="timestamp">12:51</div>
+        </li>
+        <li class="contact-item muted">
+          <img class="contact-pic" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Batfamilia" />
+          <div class="contact-info">
+            <h4>Batfamilia</h4>
+            <p>~ Matheus Hoffmann Fogaça: <span class="material-icons" style="font-size:14px;vertical-align:middle;">headset</span> Áudio</p>
+          </div>
+          <div class="timestamp">11:43</div>
+          <span class="material-icons muted-icon" title="Silenciado">notifications_off</span>
+        </li>
+        <li class="contact-item">
+          <img class="contact-pic" src="https://randomuser.me/api/portraits/men/10.jpg" alt="Time da 304" />
+          <div class="contact-info">
+            <h4>Time da 304</h4>
+            <p>will: Do que</p>
+          </div>
+          <div class="timestamp">08:21</div>
+        </li>
+        <li class="contact-item">
+          <img class="contact-pic" src="https://randomuser.me/api/portraits/lego/1.jpg" alt="TERCEIRÃO" />
+          <div class="contact-info">
+            <h4>TERCEIRÃO</h4>
+            <p>Lauren (Representante): Simulado Enem LI-BE-RA-DO (!!!) (A partir d...</p>
+          </div>
+          <div class="timestamp">08:09</div>
+        </li>
+        <li class="contact-item">
+          <img class="contact-pic" src="https://randomuser.me/api/portraits/lego/2.jpg" alt="Caixa Waths Renegociação" />
+          <div class="contact-info">
+            <h4>Caixa Waths Renegociação</h4>
+            <p>Esta empresa agora usa um serviço seguro da Meta para gerenciar e...</p>
+          </div>
+          <div class="timestamp">Ontem</div>
+        </li>
+        <li class="contact-item">
+          <img class="contact-pic" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Isac" />
+          <div class="contact-info">
+            <h4>Cl</h4>
+            <p>22/09/2025</p>
+          </div>
+        </li>
+      </ul>
+      <div class="download-whatsapp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
+        <a href="#">Baixar o WhatsApp para Windows</a>
+      </div>
+    </aside>
+    <main class="main-chat">
+      <header class="chat-header">
+        <div class="contact-info">
+          <div class="contact-pic large">A</div>
+          <h2>Anotações</h2>
+        </div>
+        <div class="chat-icons">
+          <span class="material-icons" title="Vídeo chamada">videocam</span>
+          <span class="material-icons" title="Pesquisar">search</span>
+          <span class="material-icons" title="Menu">more_vert</span>
+        </div>
+      </header>
+      <section class="chat-area">
+        <div class="date-separator">19/09/2025</div>
+        <div class="message received image-message">
+          <div class="message-bubble">
+          </div>
+          <div class="message-meta">
+            <span class="sender">Você</span>
+            <span class="status">✔✔</span>
+          </div>
+        </div>
+        <div class="message received manga-message">
+          <div class="message-bubble">
+            <div class="speech-bubble">
+              <p></p>
+            </div>
+            <img src="sukuna.jpg" alt="" />
+          </div>
+          <div class="message-meta">
+            <span class="sender">Leonardo Black...</span>
+            <span class="status">✔✔</span>
+          </div>
+        </div>
+        <div class="message received manga-message">
+          <div class="message-bubble">
+            <div class="speech-bubble">
+              <p></p>
+            </div>
+            <img src="sukuna.jpg" alt= />
+          </div>
+          <div class="message-meta">
+            <span class="sender">Leonardo Black...</span>
+            <span class="status">✔✔</span>
+          </div>
+        </div>
+      </section>
+      <footer class="chat-input-area">
+        <span class="material-icons emoji-btn" title="Emoji">sentiment_satisfied_alt</span>
+        <input type="text" placeholder="Digite uma mensagem" />
+        <span class="material-icons send-btn" title="Enviar">send</span>
+        <span class="material-icons mic-btn" title="Gravar áudio">mic</span>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
